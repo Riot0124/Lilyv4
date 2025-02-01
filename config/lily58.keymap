@@ -56,13 +56,13 @@
 // |  Dim  | Brite|  All Windows    |sptlte|Diction|       |                   | prev               |Play/pause  | next        | Mute         |   VolDn       | VolUp              |
 // |  ESC  |      |  UP             |      |       | PG_UP |                   | Font in Word       |"E.g.," Und |"Accord" Und |"See" und     |"See also" und |"Cf." und           |
 // |   `   | LEFT | DOWN            | RIGHT|       | PG_DN |                   |"Compare" und       |"with" Und  |"Contra" Und |"But see" und |"But cf." und  |"See generally" und |
-// | Globe |      |                 |      |       |       |        |  |       |Small Caps in Word  |  Underline |             |              |               |                    |
+// | Globe |      |                 |      |       |       |        |  |       |Small Caps          | Underline  |             |              |               |                    |
 //                                    | CTRL  | ALT  | GUI |  DEL   |  |   §   | GUI | ALT    | CTRL  |
             display-name = "Raise";
             bindings = <
 &kp C_BRI_DN     &kp C_BRI_UP     &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS   &kp LGUI+SPACE    &kp C_VOICE_COMMAND   &trans                             &kp C_PREV                    &kp C_PP                     &kp C_NEXT                    &kp C_MUTE                   &kp C_VOL_DN                    &kp C_VOL_UP
-&kp ESC          &trans           &kp UP                              &trans            &trans                &kp PG_UP                          &kp LGUI+D                    &kp LGUI+U+"E.g.,"+LGUI+U    &kp LGUI+U+"Accord"+LGUI+U    &kp LGUI+U+"See"+LGUI+U      &kp LGUI+U+"See also"+LGUI+U    &kp LGUI+U+"Cf."+LGUI+U
-&kp GRAVE        &kp LEFT         &kp DOWN                            &kp RIGHT         &trans                &kp PG_DN                          &kp LGUI+U+"Compare"+LGUI+U   &kp LGUI+U+"with"+LGUI+U     &kp LGUI+U+"Contra"+LGUI+U    &kp LGUI+U+"But see"+LGUI+U  &kp LGUI+U+"But cf."+LGUI+U     &kp LGUI+U+"See generally"+LGUI+U 
+&kp ESC          &trans           &kp UP                              &trans            &trans                &kp PG_UP                          &kp LGUI+D                    &kp LCTRL+LALT+N1            &kp LCTRL+LALT+N2             &kp LCTRL+LALT+N3            &kp LCTRL+LALT+N4               &kp LCTRL+LALT+N5
+&kp GRAVE        &kp LEFT         &kp DOWN                            &kp RIGHT         &trans                &kp PG_DN                          &kp LCTRL+LALT+N6             &kp LCTRL+LALT+N7            &kp LCTRL+LALT+N8             &kp LCTRL+LALT+N9            &kp LCTRL+LALT+N0               &kp LCTRL+LALT+MINUS
 &kp GLOBE        &trans           &trans                              &trans            &trans                &trans    &trans         &trans    &kp LCTRL+LSHFT+K             &kp LGUI+U                   &trans                        &trans                       &trans                          &trans
                                                                                     &kp LCTRL     &kp LALT   &kp LGUI     &kp DEL    &kp LALT+6  &kp RGUI   &kp RALT   &kp LCTRL
             >;
