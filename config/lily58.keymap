@@ -60,7 +60,7 @@
 //                                    | CTRL  | ALT  | GUI | BSPC   |  |   §   | GUI | ALT    | CTRL  |
             display-name = "Raise";
             bindings = <
-&kp ESC          &kp BRI_DN       &kp BRI_UP                          &kp MUTE          &kp VOL_DN            &kp VOL_UP                         &kp MINUS   &kp N7       &kp N8       &kp N9        &kp SLASH     &kp EQUAL
+&kp ESC          &kp C_BRI_DN       &kp C_BRI_UP                          &kp MUTE          &kp C_VOL_DN            &kp C_VOL_UP                         &kp MINUS   &kp N7       &kp N8       &kp N9        &kp SLASH     &kp EQUAL
 &kp GRAVE        &trans           &kp UP                              &trans            &trans                &kp PG_UP                          &kp K       &kp N4       &kp N5       &kp N6        &kp STAR      &trans
 &trans           &kp LEFT         &kp DOWN                            &kp RIGHT         &trans                &kp PG_DN                          &trans      &kp N1       &kp N2       &kp N3        &kp MINUS     &trans
 &kp LSHFT        &trans           &trans                              &trans            &trans                &trans    &trans         &trans    &trans      &kp N0       &trans       &trans        &kp PLUS      &trans
