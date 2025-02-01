@@ -36,9 +36,9 @@
 // ------------------------------------------------------------------------------------------------------------
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |  UP   |      |       | PG_UP |
-// |       |     |     |      |      |      |                   |      |  LEFT | DOWN  | RIGHT|       | PG_DN |
-// |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
-//                     | CTRL  | ALT  | GUI |  DEL   |  |   §   | GUI | ALT    | CTRL  |
+// | CAPS  |     |     |      |      |      |                   |      |  LEFT | DOWN  | RIGHT|       | PG_DN |
+// | SHIFT |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
+//                     | CTRL | ALT  | GUI  | BSPC   |  |   §   | GUI | ALT    | CTRL  |
             display-name = "Lower";
             bindings = <
 &kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
@@ -53,16 +53,16 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  Dim  | Brite|                 |      |       |       |                   | prev               |Play/pause  | next        | Mute         |   VolDn       | VolUp              |
-// |  ESC  |      |  UP             |      |       | PG_UP |                   |                    |"E.g.," Und |"Accord" Und |"See" und     |"See also" und |"Cf." und           |
-// |   `   | LEFT | DOWN            | RIGHT|       | PG_DN |                   |"Compare" und       |"with" Und  |"Contra" Und |"But see" und |"But cf." und  |"See generally" und |
-// | Globe |      |                 |      |       |       |        |  |       |Small Caps          |            |             |              |               |                    |
-//                                    | CTRL  | ALT  | GUI |  DEL   |  |   §   | GUI | ALT    | CTRL  |
+// |  ESC  |      |                 |      |       |       |                   | prev               |Play/pause  | next        | Mute         |   VolDn       | VolUp              |
+// |   ~   |      |  UP             |      |       | PG_UP |                   |                    |"E.g.," Und |"Accord" Und |"See" und     |"See also" und |"Cf." und           |
+// |       | LEFT | DOWN            | RIGHT|       | PG_DN |                   |"Compare" und       |"with" Und  |"Contra" Und |"But see" und |"But cf." und  |"See generally" und |
+// | SHIFT |      |                 |      |       |       |        |  |       |Small Caps          |            |             |              |               |                    |
+//                                    | CTRL  | ALT  | GUI | BSPC   |  |   §   | GUI | ALT    | CTRL  |
             display-name = "Raise";
             bindings = <
-&trans           &trans           &trans                              &trans            &trans                &trans                             &kp MINUS   &kp N1       &kp N2       &kp N3        &kp SLASH     &kp EQUAL
-&kp ESC          &trans           &kp UP                              &trans            &trans                &kp PG_UP                          &kp K       &kp N4       &kp N5       &kp N6        &kp STAR      &trans
-&kp GRAVE        &kp LEFT         &kp DOWN                            &kp RIGHT         &trans                &kp PG_DN                          &trans      &kp N7       &kp N8       &kp N9        &kp MINUS     &trans
+&kp ESC          &trans           &trans                              &trans            &trans                &trans                             &kp MINUS   &kp N1       &kp N2       &kp N3        &kp SLASH     &kp EQUAL
+&kp GRAVE        &trans           &kp UP                              &trans            &trans                &kp PG_UP                          &kp K       &kp N4       &kp N5       &kp N6        &kp STAR      &trans
+&trans           &kp LEFT         &kp DOWN                            &kp RIGHT         &trans                &kp PG_DN                          &trans      &kp N7       &kp N8       &kp N9        &kp MINUS     &trans
 &kp LSHFT        &trans           &trans                              &trans            &trans                &trans    &trans         &trans    &trans      &kp N0       &trans       &trans        &kp PLUS      &trans
                                                                                     &kp LCTRL     &kp LALT   &kp LGUI     &kp BSPC    &kp N6  &kp RGUI   &kp RALT   &kp LCTRL
             >;
