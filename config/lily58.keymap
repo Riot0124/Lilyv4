@@ -45,7 +45,7 @@
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &kp UP          &trans    &trans    &kp PG_UP
 &kp CAPS  &trans           &trans            &trans            &trans       &trans                       &trans    &kp LEFT  &kp DOWN        &kp RIGHT &trans    &kp PG_DN
 &kp LSHFT  &trans           &trans            &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans          &trans    &trans    &trans
-                                               &kp LCTRL     &kp LALT   &kp LGUI      &kp BSPC  &kp 6     &kp RGUI   &kp RALT   &kp LCTRL
+                                               &kp LCTRL     &kp LALT   &kp LGUI      &kp BSPC  &kp N6     &kp RGUI   &kp RALT   &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -60,11 +60,11 @@
 //                                    | CTRL  | ALT  | GUI |  DEL   |  |   §   | GUI | ALT    | CTRL  |
             display-name = "Raise";
             bindings = <
-&kp BRI_DN       &kp BRI_UP       &trans                              &trans            &trans                &trans                             &kp PREV    &kp PP       &kp NEXT     &kp MUTE      &kp VOL_DN    &kp VOL_UP
-&kp ESC          &trans           &kp UP                              &trans            &trans                &kp PG_UP                          &trans      &kp N1       &kp N2       &kp N3        &kp N4        &kp N5
-&kp GRAVE        &kp LEFT         &kp DOWN                            &kp RIGHT         &trans                &kp PG_DN                          &kp N6      &kp N7       &kp N8       &kp N9        &kp N0        &kp MINUS
-&kp LSHFT        &trans           &trans                              &trans            &trans                &trans    &trans         &trans    &kp K       &trans       &trans       &trans        &trans        &trans
-                                                                                    &kp LCTRL     &kp LALT   &kp LGUI     &kp BSPC    &kp 6  &kp RGUI   &kp RALT   &kp LCTRL
+&trans           &trans           &trans                              &trans            &trans                &trans                             &kp MINUS   &kp N1       &kp N2       &kp N3        &kp SLASH     &kp EQUAL
+&kp ESC          &trans           &kp UP                              &trans            &trans                &kp PG_UP                          &kp K       &kp N4       &kp N5       &kp N6        &kp STAR      &trans
+&kp GRAVE        &kp LEFT         &kp DOWN                            &kp RIGHT         &trans                &kp PG_DN                          &trans      &kp N7       &kp N8       &kp N9        &kp MINUS     &trans
+&kp LSHFT        &trans           &trans                              &trans            &trans                &trans    &trans         &trans    &trans      &kp N0       &trans       &trans        &kp PLUS      &trans
+                                                                                    &kp LCTRL     &kp LALT   &kp LGUI     &kp BSPC    &kp N6  &kp RGUI   &kp RALT   &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
