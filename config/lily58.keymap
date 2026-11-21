@@ -41,11 +41,11 @@
 //                     | CTRL | ALT  | GUI  | BSPC   |  |   §   | GUI | ALT    | CTRL  |
             display-name = "Lower";
             bindings = <
-&kp GRAVE          &kp LBKT           &kp RBKT        &kp GRAVE       &trans     &trans                             &kp TAB     &kp N7       &kp N8       &kp N9        &kp SLASH     &kp BSPC
-&kp TAB          &trans           &kp UP        &trans       &trans     &kp PG_UP                          &trans      &kp N4       &kp N5       &kp N6        &kp STAR      &trans
-&kp CAPS           &kp LEFT         &kp DOWN      &kp RIGHT    &trans     &kp PG_DN                          &trans      &kp N1       &kp N2       &kp N3        &kp MINUS     &trans
-&kp LSHFT        &trans           &trans        &trans       &trans     &trans    &trans         &trans    &trans   &kp N0       &trans       &kp EQUAL        &kp PLUS      &trans
-                                                &kp LCTRL     &kp LALT   &kp LGUI      &kp SPACE     &kp SPACE     &kp RGUI   &kp RALT   &kp RET
+&kp ESC     &kp LBKT  &kp RBKT   &kp GRAVE    &trans     &trans                         &trans    &kp N7       &kp N8       &kp N9        &kp SLASH     &kp BSPC
+&kp TAB     &trans    &kp UP     &trans       &trans     &kp PG_UP                      &trans    &kp N4       &kp N5       &kp N6        &kp STAR      &trans
+&kp CAPS    &kp LEFT  &kp DOWN   &kp RIGHT    &trans     &kp PG_DN                      &trans    &kp N1       &kp N2       &kp N3        &kp MINUS     &trans
+&kp LSHFT   &trans    &trans     &trans       &trans     &trans    &trans     &trans    &kp TAB   &kp N0       &trans       &kp EQUAL     &kp PLUS      &trans
+                         &kp LCTRL     &kp LALT   &kp LGUI      &kp SPACE     &kp SPACE     &kp RGUI   &kp RALT   &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -60,11 +60,11 @@
 //                                    | CTRL  | ALT  | GUI | BSPC   |  |   §   | GUI | ALT    | ENTER |
             display-name = "Raise";
             bindings = <
-&kp ESC      &kp LBKT       &kp RBKT          &kp GRAVE         &trans       &trans                            &kp F1     &kp F2         &kp F3          &kp F4        &kp F5        &kp F6
-&kp TAB      &trans         &kp UP          &trans         &trans       &kp PG_UP                         &kp F7     &kp F8         &kp F9          &kp F10       &kp F11       &kp F12
-&kp CAPS     &kp LEFT       &kp DOWN        &kp RIGHT      &trans       &kp PG_DN                         &trans     &trans         &trans          &trans        &trans        &trans
-&kp LSHFT    &trans         &trans          &trans         &trans       &trans    &trans        &trans    &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-                                         &kp LCTRL     &kp LALT   &kp LGUI      &kp SPACE     &kp SPACE     &kp RGUI   &kp RALT   &kp RET
+&kp ESC     &kp LBKT   &kp RBKT    &kp GRAVE  &trans    &trans                            &kp F1     &kp F2         &kp F3          &kp F4        &kp F5        &kp F6
+&kp TAB     &trans     &kp UP      &trans     &trans    &kp PG_UP                         &kp F7     &kp F8         &kp F9          &kp F10       &kp F11       &kp F12
+&kp CAPS    &kp LEFT   &kp DOWN    &kp RIGHT  &trans    &kp PG_DN                         &trans     &trans         &trans          &trans        &trans        &trans
+&kp LSHFT   &trans     &trans      &trans     &trans    &trans    &trans        &trans    &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+                         &kp LCTRL     &kp LALT   &kp LGUI      &kp SPACE     &kp SPACE     &kp RGUI   &kp RALT   &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
